@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #dbe3ed;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem #0f172a12;
+}
+
+a {
+  color: #1d4ed8;
+}
+
+h1 {
+  margin: 1rem 0 0.5rem;
+  line-height: 1.25;
+}
+
+main > p {
+  margin: 0 0 1.5rem;
+  color: #475569;
+}
+
+label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #94a3b8;
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.35rem;
+  background: #1d4ed8;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:focus-visible {
+  outline: 2px solid #1e293b;
+  outline-offset: 3px;
+}
+
+#salida {
+  min-height: 3rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #2563eb;
+  border-radius: 0.25rem;
+  background: #eff6ff;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#salida:empty::before {
+  color: #64748b;
+  content: "El resultado aparecerá aquí.";
+}
+
+@media (max-width: 36rem) {
+  body {
+    padding: 1rem 0.75rem;
+  }
+
+  main {
+    padding: 1.25rem;
+  }
+}
